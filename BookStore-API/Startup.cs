@@ -64,8 +64,9 @@ namespace BookStore_API
 
             services.AddSingleton<ILoggerService, LoggerService>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
 
-            services.AddControllers();
+            services.AddControllers();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
